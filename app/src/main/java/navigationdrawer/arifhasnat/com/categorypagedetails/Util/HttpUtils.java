@@ -28,13 +28,17 @@ public class HttpUtils  {
             }
 
         }catch (Exception ex){
+            ex.printStackTrace();
 
 
 
         }finally {
             try {
 
+                bufferedReader.close();
+
             }catch (Exception e){
+                e.printStackTrace();
 
             }
         }
